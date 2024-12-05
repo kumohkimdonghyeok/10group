@@ -1,0 +1,15 @@
+import numpy as np
+
+array = np.array([
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16]
+])
+
+center_subarray = array[1:3, 1:3]
+print("변경 전 중앙 서브 배열:\n", center_subarray)
+array[1:3, 1:3] = 0
+modified_array_as_list = array.tolist()
+print("변경 후 배열:", modified_array_as_list)
+
